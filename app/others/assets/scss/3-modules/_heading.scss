@@ -1,0 +1,153 @@
+/*
+  ----------------
+  各　見出し
+  ----------------
+*/
+.ttl-primary {
+	font-size: 42px;
+	font-weight: 700;
+	color: #fff;
+	line-height: 1.5;
+  margin-bottom: 35px;
+	@media #{$sp} {
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+  span {
+    background:linear-gradient(transparent 60%, rgba(0,0,0,0.55) 60%);
+  }
+}
+
+.ttl-primary-lower {
+  font-size: 36px;
+	font-weight: 700;
+	color: #fff;
+	line-height: 1.5;
+  margin-bottom: 30px;
+  text-align: center;
+	@media #{$sp} {
+		font-size: 22px;
+		margin-bottom: 15px;
+	}
+}
+
+.ttl-secondary {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 1.5;
+	text-align: center;
+	margin-bottom: 75px;
+  position: relative;
+	@media #{$sp} {
+		font-size: 20px;
+		margin-bottom: 40px;
+	}
+  small {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 40px;
+    position: relative;
+    @media #{$sp} {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  }
+	&::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -30px;
+    margin: auto;
+    width: 80px;
+    height: 1px;
+    background: #D22630;
+    @media #{$sp} {
+      bottom: -15px;
+      width: 40px;
+    }
+  }
+  &.cW {
+    color: #fff;
+    &::before {
+      background: #fff;
+    }
+  }
+  &.rack {
+    margin-bottom: 50px;
+    @media #{$sp} {
+      margin-bottom: 25px;
+    }
+    &::before {
+      content: none;
+    }
+    small {
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -20px;
+        margin: auto;
+        width: 80px;
+        height: 1px;
+        background: #D22630;
+        @media #{$sp} {
+          bottom: -10px;
+          width: 40px;
+        }
+      }
+    }
+  }
+  &.non {
+    margin-bottom: 40px;
+    text-align: left;
+    @media #{$sp} {
+      margin-bottom: 20px;
+    }
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.ttl-tertiary {
+	font-size: 20px;
+  font-weight: bold;
+  color: #1C83D1;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #1C83D1;
+  margin-bottom: 15px;
+  @media #{$sp} {
+    font-size: 16px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.ttl-quaternary {
+	
+	@media #{$sp} {
+		
+	}
+}
+
+.ttl-quinary {
+	
+	@media #{$sp} {
+		
+	}
+}
+
+.lead {
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 40px;
+	@media #{$sp} {
+		margin-bottom: 20px;
+	}
+}
+
+.note {
+	font-size: 12px;
+}
