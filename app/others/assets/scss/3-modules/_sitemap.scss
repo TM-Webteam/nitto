@@ -6,6 +6,20 @@
 
 .sitemap {
 
+  .hero03 {
+    height: 250px;
+    background: url("../img/sitemap/bg-hero.webp") 50% / cover no-repeat;
+    @media #{$sp} {
+      height: auto;
+    }
+    &__box {
+      width: 100%;
+      .ttl-primary-lower {
+        margin-bottom: 0;
+      }
+    }
+  }
+
   .group {
     width: calc(100% / 3 - 40px);
     @media #{$sp} {
@@ -16,7 +30,6 @@
       font-weight: bold;
       line-height: 1.5;
       padding-bottom: 10px;
-      border-bottom: 1px solid #000;
       margin-bottom: 15px;
       @media #{$sp} {
         font-size: 16px;

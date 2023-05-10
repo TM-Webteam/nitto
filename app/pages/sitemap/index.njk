@@ -1,0 +1,67 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="sitemap">
+
+  <section class="hero03 core">
+    <div class="containers">
+      <div class="hero03__box">
+        <h1 class="ttl-primary-lower">サイトマップ</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="sitemap__box">
+    <div class="containers flex gap60">
+
+      <div class="group">
+        <div class="group__ttl">製品紹介</div>
+        <ul class="group__list">
+          <li><a href="/sll/">スマートエルライン™ライト</a></li>
+          <li><a href="/plc_tape/">エルクライト™</a></li>
+          <li><a href="/agency/">販売代理店様へ</a></li>
+        </ul>
+      </div>
+
+      <div class="group">
+        <div class="group__ttl">お役立ち情報</div>
+        <ul class="group__list">
+          <li><a href="/whitepaper/">お役立ち資料</a></li>
+          <li><a href="/column/">お役立ちコラム</a></li>
+          <li><a href="/news/">お知らせ</a></li>
+        </ul>
+      </div>
+
+      <div class="group">
+        <div class="group__ttl">お問合せ</div>
+        <ul class="group__list">
+          <li><a href="/catalog/">製品カタログダウンロード</a></li>
+          <li><a href="/contact/">ご相談・お問合せ</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+
+</main>
+
+{% endblock %}

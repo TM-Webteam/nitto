@@ -24,22 +24,7 @@
     </div>
   </section>
 
-  <section class="slider">
-    <div class="containers-full">
-      <h2 class="ttl-secondary">日東エルマテリアルは多くの企業様に選ばれています。</h2>
-      <ul id="loop-slick">
-        <li><img src="<?php echo assets_path() ?>img/common/img-loop01.png" alt=""></li>
-        <li><img src="<?php echo assets_path() ?>img/common/img-loop01.png" alt=""></li>
-        <li><img src="<?php echo assets_path() ?>img/common/img-loop01.png" alt=""></li>
-        <li><img src="<?php echo assets_path() ?>img/common/img-loop01.png" alt=""></li>
-        <li><img src="<?php echo assets_path() ?>img/common/img-loop01.png" alt=""></li>
-        <li><img src="<?php echo assets_path() ?>img/common/img-loop01.png" alt=""></li>
-        <li><img src="<?php echo assets_path() ?>img/common/img-loop01.png" alt=""></li>
-        <li><img src="<?php echo assets_path() ?>img/common/img-loop01.png" alt=""></li>
-        <li><img src="<?php echo assets_path() ?>img/common/img-loop01.png" alt=""></li>
-      </ul>
-    </div>
-  </section>
+  <?php get_template_part( 'template-parts/slider' ); ?>
 
   <section class="card-type2 bg-LB">
     <div class="containers">
@@ -153,26 +138,7 @@
     </div>
   </section>
 
-  <section class="inquiry03">
-    <div class="containers-full">
-      <div class="flex">
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>contact/" class="item">
-          <div class="item__box left">
-            <figure class="item__box--img"><img src="<?php echo assets_path() ?>img/common/icon-mail.svg" alt="ご相談・お問合せ"></figure>
-            <h2 class="item__box--ttl">ご相談・お問合せ</h2>
-            <div class="item__box--txt small"><span class="tel">0120-64-0450</span><br>（平日：09:00~17:30）</div>
-          </div>
-        </a>
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>catalog/" class="item">
-          <div class="item__box right">
-            <figure class="item__box--img"><img src="<?php echo assets_path() ?>img/common/icon-dl.svg" alt="製品カタログ"></figure>
-            <h2 class="item__box--ttl">製品カタログ</h2>
-            <div class="item__box--txt">防災対策に関わる日東エルマテリアルのサービスカタログです。<br>ご興味をお持ちの方はぜひダウンロードくださいませ。</div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
+  <?php get_template_part( 'template-parts/inquiry' ); ?>
 
 </main>
 

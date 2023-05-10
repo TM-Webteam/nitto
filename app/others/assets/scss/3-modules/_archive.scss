@@ -6,17 +6,20 @@
 
 // 最新の2件のみ表示
 .latest {
-  background: #0D5BAB;
-  // .containers {
-  //   padding: 70px 30px 0;
-  //   @media #{$sp} {
-  //     padding: 35px 15px 0;
-  //   }
-  // }
+  background: #F2F4FA;
+  .containers {
+    padding: 70px 30px 0;
+    @media #{$sp} {
+      padding: 35px 15px 0;
+    }
+  }
+  .ttl-secondary.non {
+    text-align: center;
+  }
   
   .item {
     padding: 30px;
-    background: #F2F6FB;
+    background: #fff;
     width: calc(100% / 2 - 20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     position: relative;
@@ -88,6 +91,7 @@
 
 // カード一覧
 .grid {
+  background: #F2F4FA;
   &::before {
     content: "";
     width: calc(100% / 4 - 25px);
