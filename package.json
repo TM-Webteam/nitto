@@ -28,5 +28,8 @@
     "gulp-sass-glob": "^1.1.0",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.1"
+  },
+  "volta": {
+    "node": "14.21.0"
   }
 }

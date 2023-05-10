@@ -1,0 +1,117 @@
+/*
+  ----------------
+  pages-agency 販売代理店様へ 日東エルマテリアルの強み
+  ----------------
+*/
+
+.agency {
+
+    .hero03 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url("../img/agency/bg-hero.png")  no-repeat top left / cover;
+      height: 346px;
+      @media #{$sp} {
+        background: url("../img/agency/bg-hero.png") no-repeat top center / auto 100%;
+        text-align: center;
+        height: auto;
+      }
+      .containers {
+        padding: 40px 0;
+        width: 809px;
+
+        >* {
+            color: #fff;
+        }
+
+        @media #{$sp} {
+          padding: 150px 15px 35px;
+        }
+      }
+
+      &__box {
+
+        &--lead {
+            position: relative;
+            font-size: 20px;
+            padding: 8px 30px;
+            margin-bottom: 32px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                border: 1px solid #000;
+                transform: skewX(-20deg);
+            }
+            @media #{$sp} {
+              font-size: 14px;
+              margin-bottom: 30px;
+            }
+          }
+    
+    
+          &--sub {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 13px;
+            @media #{$sp} {
+              font-size: 16px;
+              margin-bottom: 15px;
+            }
+          }
+    
+          > .ttl-primary {
+            font-size: 36px;
+            color: #fff;
+            margin-bottom: 40px;
+
+            @media #{$sp} {
+                margin-bottom: 15px;
+              }
+          }
+          
+          &__btn {
+            .ctabtn {
+              width: 355px;
+              margin: 0;
+              @media #{$sp} {
+                margin: 0 auto;
+                width: 100%;
+                &:not(:last-child) {
+                  margin-bottom: 30px;
+                }
+              }
+              .more {
+                width: 355px;
+                font-size: 20px;
+                @media #{$sp} {
+                  font-size: 14px;
+                }
+              }
+            } 
+          } 
+      }
+    }
+
+    .symmetry {
+      .item__box {
+        .item__box--num,
+        .item__box--ttl {
+          color: #171C8F;
+          @media #{$sp} {
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .slider {
+      background-color: #F7F7F7;
+    }
+
+  }

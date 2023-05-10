@@ -282,6 +282,80 @@
       content: none;
     }
   }
+  // ライトブルーボタン
+  &.bgLB {
+    border: 1px solid #5FB2E2;
+    background: #5FB2E2;
+    color: #fff;
+    &:before {
+      border-top: solid 3px #fff;
+      border-right: solid 3px #fff;
+    }
+    &:hover {
+      background: #fff;
+      color: #5FB2E2;
+      &:before {
+        border-top: solid 3px #5FB2E2;
+        border-right: solid 3px #5FB2E2;
+      }
+    }
+  }
+  // ブルーボタン
+  &.bgB {
+    border: 1px solid #FFF;
+    background: #FFF;
+    color: #171C8F;
+    &:before {
+      border-top: solid 3px #171C8F;
+      border-right: solid 3px #171C8F;
+    }
+    &:hover {
+      background: #171C8F;
+      color: #FFF;
+      &:before {
+        border-top: solid 3px #FFF;
+        border-right: solid 3px #FFF;
+      }
+    }
+  }
+
+  // グリーンボタン
+  &.bgG {
+    border: 1px solid #FFF;
+    background: #FFF;
+    color: #54B38F;
+    &:before {
+      border-top: solid 3px #54B38F;
+      border-right: solid 3px #54B38F;
+    }
+    &:hover {
+      background: #54B38F;
+      color: #FFF;
+      &:before {
+        border-top: solid 3px #FFF;
+        border-right: solid 3px #FFF;
+      }
+    }
+  }
+
+    // レッドボタン
+    &.bgR {
+      border: 1px solid #D22630;
+      background: #D22630;
+      color: #fff;
+      &:before {
+        border-top: solid 3px #fff;
+        border-right: solid 3px #fff;
+      }
+      &:hover {
+        background: #fff;
+        color: #D22630;
+        &:before {
+          border-top: solid 3px #D22630;
+          border-right: solid 3px #D22630;
+        }
+      }
+    }
 }
 
 // 吹き出し付きボタン
@@ -349,6 +423,15 @@
         border-width: 6px 6px 0;
         z-index: 1;
         transition: all .3s;
+      }
+
+
+      &--cG {
+        border: 1px solid #54B38F;
+      }
+
+      &--cLB {
+        border: 1px solid #5FB2E2;
       }
     }
   }
