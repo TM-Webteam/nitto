@@ -122,23 +122,26 @@
                 margin: auto;
                 bottom: -32px;
                 transform: rotate(135deg);
-                transition: all 0.1s ease-out;
+                transition: all .3s;
             }
 
             .card__img {
-                transform: scale(1);
-                transition: all 0.1s ease-out;
+              overflow: hidden;
+              img {
+                transition: all .3s;
+              }
             }
 
             &:hover {
+              opacity: 1;
                 &::after {
-                    bottom: -50px;
-                    transition: all 0.1s ease-out;
+                    bottom: -42px;
                 }
 
                 .card__img {
+                  img {
                     transform: scale(1.1);
-                    transition: all 0.1s ease-out;
+                  }
                 }
             }
 
@@ -262,6 +265,12 @@
         height: auto;
         display: block;
         margin: auto;
+      }
+    }
+    #to-page-link02 .containers {
+      padding: 0 30px 70px;
+      @media #{$sp} {
+        padding: 35px 15px;
       }
     }
   }

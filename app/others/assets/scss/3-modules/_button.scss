@@ -44,6 +44,7 @@
   &.bgW {
     background: #fff;
     color: #171C8F;
+    border: 1px solid #fff;
     &:before {
       border-top: solid 3px #171C8F;
       border-right: solid 3px #171C8F;
@@ -91,6 +92,24 @@
       }
     }
   }
+
+  &.bgR {
+    border: 1px solid #D22630;
+    background: #D22630;
+    color: #fff;
+    &:before {
+      border-top: solid 3px #fff;
+      border-right: solid 3px #fff;
+    }
+    &:hover {
+      background: #fff;
+      color: #D22630;
+      &:before {
+        border-top: solid 3px #D22630;
+        border-right: solid 3px #D22630;
+      }
+    }
+  }
   
   &.small {
     width: 330px;
@@ -114,6 +133,9 @@
   }
   &.wp-thumb {
     width: 450px;
+    @media #{$sp} {
+      width: 85%;
+    }
     &::after {
       content: "";
       position: absolute;

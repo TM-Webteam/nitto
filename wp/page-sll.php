@@ -14,9 +14,8 @@ get_header(); ?>
           <h2 class="hero03__box--sub">簡単操作✕予算を抑えた停電対策</h2>
           <h1 class="ttl-primary">スマートエルライン™ライト</h1>
           <div class="ctabtn">
-            <h3 class="balloon bgLB balloon--cLB"><span class="balloon__txt balloon__txt--cLB">災害時のライフラインを確保する<span
-                  class="cR">給電システム</span></span></h3>
-            <a href="#" class="btn01 thumb bgLB">カタログダウンロード</a>
+            <h3 class="balloon bgLB balloon--cLB"><span class="balloon__txt balloon__txt--cLB">災害時のライフラインを確保する<span class="cR">給電システム</span></span></h3>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>catalog/" class="more wp-thumb bgLB">カタログダウンロード</a>
           </div>
         </div>
       </div>
@@ -68,7 +67,7 @@ get_header(); ?>
         <div class="card">
           <h2 class="card__ttl">「<span>コストを抑えたい</span>という顧客ニーズに<br class="sp-only">対応したい」 <span
               class="fw-n cW">企業様へ</span></h2>
-          <div class="flex gap30 sp-reverse card__box">
+          <div class="flex aiC gap30 card__box">
             <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/sll/img-sll04.png" alt=""></figure>
             <dl class="card__box--txt">
               <dt>
@@ -164,7 +163,7 @@ get_header(); ?>
           <summary class="desc__box">
             <div class="desc__box--lead">詳細が5分で分かる！</div>
             <div class="desc__box--ttl">スマートエルライン™ライト</div>
-            <a href="/whitepaper/" class="btn01 bgB">カタログをダウンロード</a>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>catalog/" class="more bgW">カタログをダウンロード</a>
           </summary>
         </div>
       </div>

@@ -16,7 +16,7 @@ get_header(); ?>
             <div class="ttl-primary">日東エルマテリアルの強み</div>
           </h1>
           <div class="ctabtn">
-            <a href="#" class="btn01 bgR">カタログダウンロード</a>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>contact/" class="more bgR">お問合せ・ご相談はこちら</a>
           </div>
         </div>
       </div>
