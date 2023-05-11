@@ -206,6 +206,10 @@ a,button[type="submit"] {
 }
 .txt-shadow {
   text-shadow: 0 0 18px rgba(0,0,0,0.8);
+
+  &--cG {
+    text-shadow: 0 0 10px rgba(84,179,143,1);
+  }
 }
 
 /*** Scroll ***/
@@ -306,8 +310,16 @@ main {
   background: #DADBE0;
 }
 
+.bg-B {
+  background: #171C8F;
+}
+
 .cR {
   color: #D22630;
+}
+
+.cW {
+  color: #fff;
 }
 
 .ctabtn .bgLB .balloon__txt {
@@ -328,4 +340,12 @@ main {
   border-color: #54b38f rgba(0,0,0,0) rgba(0,0,0,0);
   border-style: solid;
   border-width: 6px 6px 0;
+}
+
+.fw-b {
+  font-weight: bold;
+}
+
+.fw-n {
+  font-weight: normal;
 }

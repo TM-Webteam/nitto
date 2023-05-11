@@ -919,6 +919,10 @@
       }
       span {
         color: #FFF841;
+
+        &.cW {
+          color: #FFF;
+        }
       }
     }
     &__box {

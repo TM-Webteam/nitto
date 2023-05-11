@@ -1,0 +1,113 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "販売代理店様へ　日東エルマテリアルの強み" %}
+{% set description = "住環境の安全性を高める製品をご提供する、日東エルマテリアルの3つの強みをご紹介します。" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+<main>
+  <section class="agency">
+    <section class="hero03">
+      <div class="containers core">
+        <div class="hero03__box">
+          <h1>
+            <div class="hero03__box--sub">販売代理店様へ</div>
+            <div class="ttl-primary">日東エルマテリアルの強み</div>
+          </h1>
+          <div class="ctabtn">
+            <a href="#" class="btn01 bgR">カタログダウンロード</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="symmetry">
+      <div class="containers">
+
+        <div class="flex aiC sp-reverse item">
+          <summary class="item__box">
+            <div class="item__box--num">01</div>
+            <h2 class="item__box--ttl">400社あまりの関連メーカー品を提供可能</h2>
+            <h3 class="item__box--txt">
+              日東電工グループとして、「住宅関連材料・製品」と「生産現場への生産材・副資材」を主に販売しています。取扱メーカー数は400社ほどあり、お客様のニーズ・課題に対し、様々な製品で課題解決をご提案いたします。</h3>
+          </summary>
+          <figure class="item__img"><img src="/others/assets/img/agency/img-agency01.png" alt=""></figure>
+        </div>
+
+        <div class="flex aiC item">
+          <figure class="item__img"><img src="/others/assets/img/agency/img-agency02.png" alt=""></figure>
+          <summary class="item__box">
+            <div class="item__box--num">02</div>
+            <h2 class="item__box--ttl">お客様のご要望にお応えして新製品開発も可能</h2>
+            <h3 class="item__box--txt">
+              弊社は商社でありながらも、ファブレスメーカーとしての顔も持ち合わせており、ご要望に合わせ「新製品開発」も行っています。また、シート・フィルム・テープ・フォームをはじめとする素材に対して加工を施し、新たな機能を付加した製品のご提案が可能です。
+            </h3>
+          </summary>
+        </div>
+
+        <div class="flex aiC sp-reverse item">
+          <summary class="item__box">
+            <div class="item__box--num">03</div>
+            <h2 class="item__box--ttl">お客様のニーズ・課題をスピーディに解決</h2>
+            <h3 class="item__box--txt">オンラインを含む面談営業を基本とする事で お客様のニーズを的確に把握して高い専門知識で”お困りごと”に対し、スピーディーに解決をいたします。</h3>
+          </summary>
+          <figure class="item__img"><img src="/others/assets/img/agency/img-agency03.png" alt=""></figure>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="slider">
+      <div class="containers-full">
+        <h2 class="ttl-secondary">日東エルマテリアルは多くの企業様に選ばれています。</h2>
+        <ul id="loop-slick">
+          <li><img src="/others/assets/img/common/img-loop01.png" alt=""></li>
+          <li><img src="/others/assets/img/common/img-loop01.png" alt=""></li>
+          <li><img src="/others/assets/img/common/img-loop01.png" alt=""></li>
+          <li><img src="/others/assets/img/common/img-loop01.png" alt=""></li>
+          <li><img src="/others/assets/img/common/img-loop01.png" alt=""></li>
+          <li><img src="/others/assets/img/common/img-loop01.png" alt=""></li>
+          <li><img src="/others/assets/img/common/img-loop01.png" alt=""></li>
+          <li><img src="/others/assets/img/common/img-loop01.png" alt=""></li>
+          <li><img src="/others/assets/img/common/img-loop01.png" alt=""></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="inquiry03">
+      <div class="containers-full">
+        <div class="flex">
+          <a href="/contact/" class="item">
+            <div class="item__box left">
+              <figure class="item__box--img"><img src="/others/assets/img/common/icon-mail.svg" alt="ご相談・お問合せ"></figure>
+              <h2 class="item__box--ttl">ご相談・お問合せ</h2>
+              <div class="item__box--txt small"><span class="tel">0120-64-0450</span><br>（平日：09:00~17:30）</div>
+            </div>
+          </a>
+          <a href="/catalog/" class="item">
+            <div class="item__box right">
+              <figure class="item__box--img"><img src="/others/assets/img/common/icon-dl.svg" alt="製品カタログ"></figure>
+              <h2 class="item__box--ttl">製品カタログ</h2>
+              <div class="item__box--txt">防災対策に関わる日東エルマテリアルのサービスカタログです。<br>ご興味をお持ちの方はぜひダウンロードくださいませ。</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </section>
+</main>
+{% endblock %}

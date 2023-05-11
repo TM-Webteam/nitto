@@ -1,0 +1,267 @@
+/*
+  ----------------
+  pages-plc_tape 高輝度蓄光テープ エルクライト™ シリーズ
+  ----------------
+*/
+
+.plc_tape {
+
+    .hero03 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url("../img/plc_tape/bg-hero.png")  no-repeat top left / cover;
+      height: 500px;
+      @media #{$sp} {
+        background: url("../img/plc_tape/bg-hero.png") no-repeat top center / auto 100%;
+        text-align: center;
+        height: auto;
+      }
+      .containers {
+        padding: 40px 0;
+        width: 809px;
+
+        >* {
+            color: #fff;
+        }
+
+        @media #{$sp} {
+          width: 98%;
+          padding: 150px 15px 35px;
+        }
+      }
+
+      &__box {
+
+        &--lead {
+            position: relative;
+            font-size: 20px;
+            padding: 8px 30px;
+            margin-bottom: 32px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                border: 1px solid #fff;
+                transform: skewX(-20deg);
+            }
+            @media #{$sp} {
+              font-size: 14px;
+              margin-bottom: 30px;
+            }
+          }
+    
+    
+          &--sub {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 13px;
+            @media #{$sp} {
+              font-size: 16px;
+              margin-bottom: 15px;
+            }
+          }
+    
+          > .ttl-primary {
+            font-size: 36px;
+            color: #fff;
+            margin-bottom: 54px;
+
+            @media #{$sp} {
+              font-size: 28px;
+                margin-bottom: 15px;
+              }
+          }
+          
+          &__btn {
+            .ctabtn {
+              width: 355px;
+              margin: 0;
+              @media #{$sp} {
+                margin: 0 auto;
+                width: 100%;
+                &:not(:last-child) {
+                  margin-bottom: 30px;
+                }
+              }
+              .more {
+                width: 355px;
+                font-size: 20px;
+                @media #{$sp} {
+                  font-size: 14px;
+                }
+              }
+            } 
+          } 
+      }
+    }
+
+    &__recommend {
+        background: #f7f7f7;
+
+        .card {
+            position: relative;
+
+            @media #{$sp} {
+              margin-bottom: 80px;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                border-top: solid 5px #171C8F;
+                border-right: solid 5px #171C8F;
+                left: 0;
+                right: 0;
+                margin: auto;
+                bottom: -32px;
+                transform: rotate(135deg);
+                transition: all 0.1s ease-out;
+            }
+
+            .card__img {
+                transform: scale(1);
+                transition: all 0.1s ease-out;
+            }
+
+            &:hover {
+                &::after {
+                    bottom: -50px;
+                    transition: all 0.1s ease-out;
+                }
+
+                .card__img {
+                    transform: scale(1.1);
+                    transition: all 0.1s ease-out;
+                }
+            }
+
+            .card__box {
+                border-top: 3px solid #171C8F;
+                background: #fff;
+                padding: 20px 0;
+                min-height: 99px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                >* {
+                    font-size: 20px;
+                    line-height: 28px;
+                    font-weight: bold;
+                    color: #171C8F;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .card-type4 {
+      .card__box--txt {
+        padding-top: 52px;
+
+        @media #{$sp} {
+          padding-top: 0;
+        }
+      }
+    }
+
+
+
+    &__about {
+        background: url("../img/plc_tape/bg-about-plc_tape.png") no-repeat top left / cover;
+
+        .card__box--img {
+            width: 100%;
+            max-width: 574px;
+            height: auto;
+            margin: auto;
+        }
+    }
+    
+    &__feature {
+
+        .card__box--img {
+            width: 100px;
+            margin: 0 auto 20px;
+        }
+
+        .card__box--ttl {
+            padding: 9px 0;
+            background-color: #F2F4FA;
+            color: #171C8F;
+            font-size: 20px;
+            line-height: 30px;
+            margin: 0 -30px 30px;
+            min-height: 78px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media #{$sp} {
+              margin: 0 -15px 30px;
+            }
+        }
+
+        &--img {
+            width: 100%;
+            max-width: 1100px;
+            margin: auto;
+        }
+    }
+
+    .material.bg-B {
+        background: #171C8F;
+
+        .desc__box--lead {
+          font-size: 22px;
+          margin-bottom: 8px;
+        }
+        .desc__box--ttl {
+          font-size: 32px;
+          width: 110%;
+
+          @media #{$sp} {
+            width: 100%;
+          }
+        }
+    }
+
+    &__usage {
+      .item__box {
+        margin-bottom: 50px;
+      }
+      @media #{$pc} {
+        .item__box:nth-of-type(-n+2) {
+          margin-bottom: 50px;
+        }
+      }
+      .desc__img {
+        margin-bottom: 20px;
+      }
+      .desc__ttl {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1;
+        text-align: center;
+      }
+    }
+
+    &__grade {
+      background-color: #DADBE0;
+
+      iframe {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        max-width: 685px;
+        height: auto;
+        display: block;
+        margin: auto;
+      }
+    }
+  }
