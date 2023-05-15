@@ -105,9 +105,10 @@
 
         .card {
             position: relative;
-
+            width: calc(90% / 2 - 20px);
             @media #{$sp} {
-              margin-bottom: 80px;
+              margin-bottom: 60px;
+              width: 100%;
             }
 
             &::after {

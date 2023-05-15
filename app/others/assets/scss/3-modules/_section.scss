@@ -641,16 +641,15 @@
       }
     }
     &__box {
-      width: 40%;
+      width: 50%;
       @media #{$sp} {
         width: 100%;
       }
       &--sub {
         font-size: 22px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         @media #{$sp} {
           font-size: 16px;
-          margin-bottom: 10px;
         }
       }
       &--ttl {
@@ -662,7 +661,7 @@
           margin-bottom: 15px;
         }
       }
-      .btn01 {
+      .more {
         margin: 0;
         max-width: 400px;
         font-size: 16px;
@@ -1239,6 +1238,96 @@
           @media #{$sp} {
             font-size: 36px;
           }
+        }
+      }
+    }
+  }
+}
+
+
+.catalog-menu {
+  background: #f2f4fa;
+  .card {
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    background: #fff;
+    padding: 30px;
+    @media #{$sp} {
+      padding: 15px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 30px;
+      @media #{$sp} {
+        margin-bottom: 15px;
+      }
+    }
+    &__img {
+      width: 30%;
+      text-align: center;
+      overflow: hidden;
+      @media #{$sp} {
+        width: 85%;
+        margin: 0 auto 15px;
+      }
+      img {
+        aspect-ratio: 3 / 2;
+        object-fit: contain;
+        transition: all .3s;
+      }
+    }
+    &__box {
+      width: calc(100% - 30% - 30px);
+      @media #{$sp} {
+        width: 100%;
+      }
+      &--ttl {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        transition: all .3s;
+        @media #{$sp} {
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+      }
+      &--txt {
+        margin-bottom: 30px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        transition: all .3s;
+        @media #{$sp} {
+          margin-bottom: 15px;
+        }
+      }
+      .more {
+        max-width: 360px;
+        margin: 0 auto;
+        font-size: 16px;
+        transition: all .3s;
+        @media #{$sp} {
+          width: 100%;
+          margin: 0 auto;
+          font-size: 14px;
+        }
+      }
+    }
+    &:hover {
+      opacity: 1;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      .card__box--ttl,.card__box--txt {
+        color: #171C8F;
+      }
+      .more {
+        background: #fff;
+        color: #171C8F;
+        &::before {
+          border-top: solid 3px #171C8F;
+          border-right: solid 3px #171C8F;
         }
       }
     }

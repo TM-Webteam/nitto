@@ -7,15 +7,18 @@ get_header(); ?>
 
 <main class="template">
   <section class="sll">
-    <section class="hero03">
-      <div class="containers core">
-        <div class="hero03__box">
-          <h2 class="hero03__box--lead">ハウスメーカー様、工務店様、太陽光発電・<br class="sp-only">蓄電池の設置運用会社様へ</h2>
-          <h2 class="hero03__box--sub">簡単操作✕予算を抑えた停電対策</h2>
-          <h1 class="ttl-primary">スマートエルライン™ライト</h1>
+
+    <section class="hero02">
+      <div class="containers">
+        <div class="hero02__box">
+          <div class="hero02__box--had">ハウスメーカー様、工務店様、太陽光発電・蓄電池の設置運用会社様へ</div>
+          <div class="hero02__box--sub">簡単操作✕予算を抑えた停電対策</div>
+          <h1 class="ttl-primary-lower">スマートエルライン™ライト</h1>
           <div class="ctabtn">
-            <h3 class="balloon bgLB balloon--cLB"><span class="balloon__txt balloon__txt--cLB">災害時のライフラインを確保する<span class="cR">給電システム</span></span></h3>
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>catalog/" class="more wp-thumb bgLB">カタログダウンロード</a>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>catalog/" class="more bgLB wp-thumb">
+              <div class="balloon"><span class="balloon__txt">災害時のライフラインを確保する<span class="cR">給電システム</span></span></div>
+              カタログダウンロード
+            </a>
           </div>
         </div>
       </div>
@@ -24,7 +27,7 @@ get_header(); ?>
     <section class="sll__recommend">
       <div class="containers">
         <h2 class="ttl-secondary">こんな企業様におすすめです。</h2>
-        <div class="flex jcA gap30">
+        <div class="flex jcC gap50">
           <a href="#to-page-link01" class="card">
             <summary class="card__box">
               <h3 class="card__box--ttl">「災害に強い家」という切り口で<br>家を販売したい</h3>
@@ -161,7 +164,7 @@ get_header(); ?>
         <div class="flex aiC jcC gap50 desc">
           <figure class="desc__img"><img src="<?php echo assets_path() ?>img/common/img-wp.png" alt=""></figure>
           <summary class="desc__box">
-            <div class="desc__box--lead">詳細が5分で分かる！</div>
+            <div class="desc__box--sub">詳細が5分で分かる！</div>
             <div class="desc__box--ttl">スマートエルライン™ライト</div>
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>catalog/" class="more bgW">カタログをダウンロード</a>
           </summary>

@@ -6,111 +6,71 @@
 
 .sll {
 
-    .hero03 {
+  .hero02 {
+    background: url("../img/sll/bg-hero.webp") 100% 50% / 60% auto no-repeat #2F527A;
+    height: 480px;
+    color: #fff;
+    @media #{$sp} {
+      height: auto;
+      background: url("../img/sll/bg-hero.webp") 50% 65% / 100% auto no-repeat #2F527A;
+    }
+    .containers {
       display: flex;
+      flex-direction: column;
       justify-content: center;
-      align-items: center;
-      background: url("../img/sll/bg-hero.png")  no-repeat top left / cover;
-      color: #fff;
-      height: 500px;
+      padding: 80px 30px;
       @media #{$sp} {
-        background: url("../img/sll/bg-hero-sp.png") no-repeat top left / auto 100%;
-        text-align: center;
-        height: auto;
-      }
-      .containers {
-        padding: 40px 0;
-        width: 809px;
-        background: rgba(255,255,255,.9);
-
-        >* {
-            color: #000;
-        }
-
-        @media #{$sp} {
-          width: 100%;
-          background: rgba(255,255,255,.6);
-          padding: 150px 15px 35px;
-        }
-      }
-
-      &__box {
-
-        &--lead {
-            position: relative;
-            font-size: 20px;
-            padding: 8px 30px;
-            margin-bottom: 32px;
-
-            &::after {
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                border: 1px solid #000;
-                transform: skewX(-20deg);
-            }
-            @media #{$sp} {
-              font-size: 14px;
-              margin-bottom: 30px;
-            }
-          }
-    
-    
-          &--sub {
-            font-size: 22px;
-            font-weight: bold;
-            margin-bottom: 13px;
-            @media #{$sp} {
-              font-size: 16px;
-              margin-bottom: 15px;
-            }
-          }
-    
-          > .ttl-primary {
-            font-size: 36px;
-            color: #000;
-            margin-bottom: 54px;
-
-            @media #{$sp} {
-                font-size: 28px;
-                margin-bottom: 15px;
-              }
-          }
-          
-          &__btn {
-            .ctabtn {
-              width: 355px;
-              margin: 0;
-              @media #{$sp} {
-                margin: 0 auto;
-                width: 100%;
-                &:not(:last-child) {
-                  margin-bottom: 30px;
-                }
-              }
-              .more {
-                width: 355px;
-                font-size: 20px;
-                @media #{$sp} {
-                  font-size: 14px;
-                }
-              }
-            } 
-          } 
+        padding: 30px 15px;
       }
     }
+    &__box {
+      width: 55%;
+      text-align: center;
+      @media #{$sp} {
+        width: 100%;
+      }
+      &--had {
+        display: inline-block;
+        padding: 5px 20px;
+        border: 1px solid #fff;
+        margin-bottom: 35px;
+        @media #{$sp} {
+          margin-bottom: 20px;
+        }
+      }
+      &--sub {
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-size: 22px;
+        @media #{$sp} {
+          font-size: 16px;
+          margin-bottom: 15px;
+        }
+      }
+      .ttl-primary-lower {
+        margin-bottom: 60px;
+        @media #{$sp} {
+          margin-bottom: 150px;
+        }
+      }
+      .more {
+        margin: 0;
+        @media #{$sp} {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
 
     &__recommend {
         background: #f7f7f7;
 
         .card {
             position: relative;
-
+            width: calc(90% / 2 - 20px);
             @media #{$sp} {
-              margin-bottom: 80px;
+              margin-bottom: 60px;
+              width: 100%;
             }
 
             &::after {
@@ -228,9 +188,11 @@
         }
 
         &--img {
-            width: 100%;
-            max-width: 1100px;
-            margin: auto;
+            max-width: 680px;
+            margin: 0 auto;
+            img {
+              border:1px #ccc solid;
+            }
         }
     }
 

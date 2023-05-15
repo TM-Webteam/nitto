@@ -75,7 +75,7 @@
             font-size: 14px;
             padding: 5px 15px;
             color: #fff;
-            background: #0D5BAB;
+            background: #171C8F;
             @media #{$sp} {
               font-size: 12px;
               padding: 5px;
@@ -92,10 +92,9 @@
     }
   }
   &__toc {
-    border: 3px solid #F2F6FB;
+    border: 1px solid #171C8F;
     padding: 30px;
     @media #{$sp} {
-      border: 2px solid #F2F6FB;
       padding: 15px;
     }
     &--ttl {

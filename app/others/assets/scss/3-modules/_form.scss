@@ -5,6 +5,7 @@
 */
 
 .form {
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
   &__note {
     margin-bottom: 60px;
     @media #{$sp} {
@@ -23,13 +24,12 @@
     }
   }
   &__ttl {
-    background: #14134C;
+    background: #F7F7F7;
     text-align: center;
-    color: #fff;
+    color: #171C8F;
     font-size: 20px;
     font-weight: bold;
     padding: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
     @media #{$sp} {
       font-size: 16px;
       padding: 10px;
@@ -45,7 +45,6 @@
   &__table {
     background: #F6F6F6;
     padding: 20px 70px 40px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
     @media #{$sp} {
       padding: 15px;
     }
@@ -261,7 +260,7 @@
           }
         }
       }
-      .btn01.small {
+      .more.small {
         width: 100%;
       }
     }

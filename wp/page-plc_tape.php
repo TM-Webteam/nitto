@@ -25,7 +25,7 @@ get_header(); ?>
       <section class="plc_tape__recommend">
         <div class="containers">
             <h2 class="ttl-secondary">こんな企業様におすすめです。</h2>
-            <div class="flex jcA gap30">
+            <div class="flex jcC gap50">
                 <a href="#to-page-link01" class="card">
                     <summary class="card__box">
                         <h3 class="card__box--ttl">突然の停電に備え、<br>電気に頼らない防災対策をしたい</h3>
@@ -115,7 +115,7 @@ get_header(); ?>
             <div class="flex aiC jcC gap50 desc">
             <figure class="desc__img"><img src="<?php echo assets_path() ?>img/common/img-wp.png" alt=""></figure>
             <summary class="desc__box">
-                <div class="desc__box--lead">標準サイズや残光輝度、りん光時間が分かる！</div>
+                <div class="desc__box--sub">標準サイズや残光輝度、りん光時間が分かる！</div>
                 <div class="desc__box--ttl">高輝度蓄光テープ <br class="sp-only">エルクライト™</div>
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>catalog/" class="more bgW">カタログをダウンロード</a>
             </summary>

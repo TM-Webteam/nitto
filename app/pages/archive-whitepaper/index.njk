@@ -1,0 +1,105 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="arc-whitepaper">
+
+  <section class="hero03 core">
+    <div class="containers">
+      <div class="hero03__box">
+        <h1 class="ttl-primary-lower">お役立ち資料</h1>
+        <div class="lead">業界や製品に関する基礎知識、ノウハウをまとめた資料をご用意しております。<br>無料でダウンロードいただけますのでぜひご覧ください。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="latest">
+    <div class="containers">
+      <h2 class="ttl-secondary non">おすすめ資料</h2>
+      <div class="flex gap30">
+
+        <a href="#" class="flex item">
+          <h3 class="item__ttl">資料タイトルが入ります資料タイトルが入ります資料タイトルが入ります資料タイトルが入ります資</h3>
+          <div class="item__img"><img src="/others/assets/img/common/img01.jpg" alt=""></div>
+          <div class="item__box">
+            <div class="item__box--cat"><span class="cat">カテゴリ名</span></div>
+            <div class="item__box--txt">資料リード文が入ります。資料リード文が入ります。資料リード文が入ります。資料リード文が入ります。資料リード文が入ります。</div>
+          </div>
+        </a>
+
+        <a href="#" class="flex item">
+          <h3 class="item__ttl">資料タイトルが入ります資料タイトルが入ります資料タイトルが入ります資料タイトルが入ります資</h3>
+          <div class="item__img"><img src="/others/assets/img/common/img01.jpg" alt=""></div>
+          <div class="item__box">
+            <div class="item__box--cat"><span class="cat">カテゴリ名</span></div>
+            <div class="item__box--txt">資料リード文が入ります。資料リード文が入ります。資料リード文が入ります。資料リード文が入ります。資料リード文が入ります。</div>
+          </div>
+        </a>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="catalog-menu">
+    <div class="containers">
+
+      <a href="#" class="flex card">
+        <figure class="card__img"><img src="/others/assets/img/whitepaper/img-card01.jpg" alt=""></figure>
+        <summary class="card__box">
+          <h2 class="card__box--ttl">資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入り資料タイトルが入り</h2>
+          <h3 class="card__box--txt">リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。</h3>
+          <div class="more">資料をダウンロード</div>
+        </summary>
+      </a>
+
+      <a href="#" class="flex card">
+        <figure class="card__img"><img src="/others/assets/img/whitepaper/img-card01.jpg" alt=""></figure>
+        <summary class="card__box">
+          <h2 class="card__box--ttl">資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入り資料タイトルが入り</h2>
+          <h3 class="card__box--txt">リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。</h3>
+          <div class="more">資料をダウンロード</div>
+        </summary>
+      </a>
+
+      <a href="#" class="flex card">
+        <figure class="card__img"><img src="/others/assets/img/whitepaper/img-card01.jpg" alt=""></figure>
+        <summary class="card__box">
+          <h2 class="card__box--ttl">資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入り資料タイトルが入り</h2>
+          <h3 class="card__box--txt">リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。</h3>
+          <div class="more">資料をダウンロード</div>
+        </summary>
+      </a>
+
+      <a href="#" class="flex card">
+        <figure class="card__img"><img src="/others/assets/img/whitepaper/img-card01.jpg" alt=""></figure>
+        <summary class="card__box">
+          <h2 class="card__box--ttl">資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入り資料タイトルが入り</h2>
+          <h3 class="card__box--txt">リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。</h3>
+          <div class="more">資料をダウンロード</div>
+        </summary>
+      </a>
+      
+    </div>
+  </section>
+
+
+</main>
+
+{% endblock %}
