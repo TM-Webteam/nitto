@@ -1,5 +1,5 @@
 <?php
-$allsearch = new WP_Query("s=$s&posts_per_page=-1");
+$allsearch = new WP_Query("s=$s&posts_per_page=-1&post_status=publish");
 $key = esc_html($s);
 ?>
 <?php get_header(); ?>
@@ -12,14 +12,14 @@ $key = esc_html($s);
       <!-- タクソノミー -->
       <section class="main-conts article">
 
-        <h1 class="article__ttl">「<span><?php echo $key; ?></span>」で検索した結果：<?php echo $wp_query->found_posts; ?> 件</h1>
+        <h1 class="article__ttl">「<span><?php echo $key; ?></span>」で検索した結果：<?php echo $allsearch->found_posts; ?> 件</h1>
 
         <div class="article__wrap">
 
         <?php
-        if (have_posts()) :
+        if ($allsearch->have_posts()) :
         ?>
-          <?php while (have_posts()) : the_post();
+          <?php while ($allsearch->have_posts()) : $allsearch->the_post();
             $post_id = get_the_ID();
             $post_terms = get_the_terms($post_id, 'column_category');
           ?>

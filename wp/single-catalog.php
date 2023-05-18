@@ -70,7 +70,7 @@
                   <span class="item">会社名</span>
                   <span class="required"></span>
                 </th>
-                <td><input type="text" placeholder="例）NTTデータウェーブ株式会社"></td>
+                <td><input type="text" placeholder="例）日東エルマテリアル株式会社"></td>
               </tr>
               <tr>
                 <th class="flex aiC">

@@ -1,9 +1,9 @@
 <!-- サイドメニュー -->
 <aside class="side-nav">
 
-  <a href="<?php echo esc_url( home_url( '/' ) ); ?>contact/" class="bnr-contact"><img src="<?php echo assets_path() ?>img/common/bnr-contact.svg" alt="エンジニア採用代行に関する"></a>
+  <a href="<?php echo esc_url( home_url( '/' ) ); ?>contact/" class="bnr-contact"><img src="<?php echo assets_path() ?>img/common/bnr-contact.png" alt="エンジニア採用代行に関する"></a>
 
-  <a href="<?php echo esc_url( home_url( '/' ) ); ?>catalog/" class="bnr-catalog"><img src="<?php echo assets_path() ?>img/common/bnr-catalog.svg" alt="エンジニア採用のノウハウなど、採用業務の課題解決に役立つ！"></a>
+  <a href="<?php echo esc_url( home_url( '/' ) ); ?>catalog/" class="bnr-catalog"><img src="<?php echo assets_path() ?>img/common/bnr-catalog.png" alt="エンジニア採用のノウハウなど、採用業務の課題解決に役立つ！"></a>
 
   <div class="search">
     <form action="<?php echo home_url('/'); ?>" class="search__form">
