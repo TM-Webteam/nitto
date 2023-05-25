@@ -57,7 +57,7 @@
       <aside class="side-form">
 
         <!-- カイロスタグ挿入 -->
-        <form action="" class="form">
+        <!-- <form action="" class="form">
           <div class="form__ttl">ダウンロード申込みフォーム</div>
           <div class="form__table">
             <table>
@@ -122,8 +122,12 @@
             </tbody></table>
             <button type="submit" class="more small">確認画面へ進む</button>
           </div>
-        </form>
+        </form> -->
         <!-- カイロスタグ挿入 end -->
+        <div class="form__ttl">ダウンロード申込みフォーム</div>
+        <div id="satori__creative_container">
+          <script id="-_-satori_creative-_-" src="//delivery.satr.jp/js/creative_set.js" data-key="<?php echo CFS()->get('form_id'); ?>"></script>
+        </div>
 
       </aside>
       

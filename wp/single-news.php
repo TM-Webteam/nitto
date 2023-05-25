@@ -22,9 +22,9 @@ $post_terms = get_the_terms($post_id, 'news_category');
 
       <?php get_template_part( 'template-parts/sns' ); ?>
 
-      <div class=" news-single__lead"><?php echo CFS()->get('lead'); ?></div>
+      <div class="news-single__lead"><?php echo CFS()->get('lead'); ?></div>
 
-      <div class=" news-single__conts"><?php the_content(); ?></div>
+      <div class="news-single__conts"><?php the_content(); ?></div>
 
     </div>
   </section>

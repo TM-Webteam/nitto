@@ -691,13 +691,13 @@
       color: #171C8F;
       dt {
         font-weight: bold;
-        width: 100px;
+        width: 110px;
         @media #{$sp} {
           width: 100%;
         }
       }
       dd {
-        width: calc(100% - 100px);
+        width: calc(100% - 110px);
         overflow: hidden;
         display: -webkit-box;
         -webkit-box-orient: vertical;

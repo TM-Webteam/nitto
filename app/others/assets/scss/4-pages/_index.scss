@@ -59,4 +59,21 @@
     }
   }
 
+  .useful-wp {
+    .more.small {
+      @media #{$sp} {
+        width: 80%;
+      }
+    }
+    .more.bgW {
+      border: 1px solid #171c8f;
+    }
+  }
+
+  .sec-news {
+    .more.bgW {
+      border: 1px solid #171c8f;
+    }
+  }
+
 }

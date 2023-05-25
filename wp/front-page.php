@@ -46,7 +46,7 @@
         </a>
       </div>
       <div class="ctabtn">
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>catalog/" class="more wp-thumb">
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>catalog/" class="more">
           <div class="balloon"><span class="balloon__txt">日東エルマテリアルの停電対策サービス</span></div>
           カタログダウンロード
         </a>
@@ -59,23 +59,38 @@
     <div class="containers">
       <h2 class="ttl-secondary">停電などの防災対策に関わる<br class="sp-only">お役立ち資料</h2>
       <div class="flex jcA gap30">
-        <a href="#" class="card">
-          <figure class="card__img"><img src="<?php echo assets_path() ?>img/top/img-useful01.png" alt=""></figure>
-          <summary class="card__box">
-            <h3 class="card__box--ttl">資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイト</h3>
-            <div class="card__box--txt">資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。</div>
-            <div class="more small">資料をダウンロード</div>
-          </summary>
-        </a>
-        <a href="#" class="card">
-          <figure class="card__img"><img src="<?php echo assets_path() ?>img/top/img-useful02.png" alt=""></figure>
-          <summary class="card__box">
-            <h3 class="card__box--ttl">資料タイトルが入ります。資料タイトルが入ります。資料タイト</h3>
-            <div class="card__box--txt">資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。</div>
-            <div class="more small">資料をダウンロード</div>
-          </summary>
-        </a>
+
+        <?php
+        $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+        $args = array(
+          'posts_per_page' => 2,
+          'post_type' => 'whitepaper',
+          'paged' => $paged,
+          'order' => 'DESC',
+          'post_status' => 'publish',
+        );
+        $the_query = new WP_Query($args);
+        if ($the_query->have_posts()) :
+        ?>
+          <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+
+
+          <a href="<?php the_permalink(); ?>" class="card">
+            <figure class="card__img"><?php the_post_thumbnail(); ?></figure>
+            <summary class="card__box">
+              <h3 class="card__box--ttl"><?php the_title(); ?></h3>
+              <div class="card__box--txt"><?php echo CFS()->get('lead'); ?></div>
+              <div class="more small">資料をダウンロード</div>
+            </summary>
+          </a>
+
+          <?php endwhile; ?>
+        <?php endif; ?>
+
       </div>
+
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>whitepaper/" class="more bgW">お役立ち資料一覧を見る</a>
+      
     </div>
   </section>
 
@@ -97,42 +112,34 @@
     <div class="containers">
       <h2 class="ttl-secondary">お知らせ</h2>
 
-      <a href="#" class="sec-news__box">
-        <dl class="flex aiC sec-news__box--item">
-          <dt><time class="time">2022.9.20</time></dt>
-          <dd>お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。</dd>
-        </dl>
-      </a>
-      <a href="#" class="sec-news__box">
-        <dl class="flex aiC sec-news__box--item">
-          <dt><time class="time">2022.9.20</time></dt>
-          <dd>お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。</dd>
-        </dl>
-      </a>
-      <a href="#" class="sec-news__box">
-        <dl class="flex aiC sec-news__box--item">
-          <dt><time class="time">2022.9.20</time></dt>
-          <dd>お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。</dd>
-        </dl>
-      </a>
-      <a href="#" class="sec-news__box">
-        <dl class="flex aiC sec-news__box--item">
-          <dt><time class="time">2022.9.20</time></dt>
-          <dd>お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。</dd>
-        </dl>
-      </a>
-      <a href="#" class="sec-news__box">
-        <dl class="flex aiC sec-news__box--item">
-          <dt><time class="time">2022.9.20</time></dt>
-          <dd>お知らせタイトルが入ります。お知らせタイトルが入ります。</dd>
-        </dl>
-      </a>
-      <a href="#" class="sec-news__box">
-        <dl class="flex aiC sec-news__box--item">
-          <dt><time class="time">2022.9.20</time></dt>
-          <dd>お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。お知らせタイトルが入ります。</dd>
-        </dl>
-      </a>
+      <?php
+      $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+      $args = array(
+        'posts_per_page' => 6,
+        'post_type' => 'news',
+        'paged' => $paged,
+        'order' => 'DESC',
+        'post_status' => 'publish',
+      );
+      $the_query = new WP_Query($args);
+      if ($the_query->have_posts()) :
+      ?>
+        <?php while ($the_query->have_posts()) : $the_query->the_post();
+          $post_id = get_the_ID();
+          $post_terms = get_the_terms($post_id, 'news_category');
+          
+        ?>
+
+        <a href="<?php the_permalink(); ?>" class="sec-news__box">
+          <dl class="flex aiC sec-news__box--item">
+            <dt><time class="time"><?php echo get_the_date('Y.m.d'); ?></time></dt>
+            <dd><h3><?php echo strip_tags(get_the_title()); ?></h3></dd>
+          </dl>
+        </a>
+
+        <?php endwhile; ?>
+      <?php endif; ?>
+      
       
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>news/" class="more bgW">お知らせ一覧を見る</a>
     </div>

@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W3D3WCV');</script>
+<!-- End Google Tag Manager -->
+
 <meta charset="<?php esc_html(bloginfo('charset')); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -37,6 +45,11 @@
 <body class="<?php if ($body_class) {
 								echo $body_class;
 							} ?>">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3D3WCV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
   <header>
   <div class="in">
     <aside class="flex aiC inherit">
@@ -66,7 +79,7 @@
               <a href="<?php echo esc_url( home_url( '/' ) ); ?>sll/" class="ttl">スマートエルライン™ライト</a>
             </div>
             <div class="mega__box--list">
-              <a href="<?php echo esc_url( home_url( '/' ) ); ?>plc_tape/" class="ttl">エルクライト™JB.JC.JD</a>
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>plc_tape/" class="ttl">エルクライト™ シリーズ</a>
             </div>
           </div>
         </div>
@@ -97,7 +110,7 @@
     <ul class="list">
       <li><a href="#" class="disabled">製品紹介</a></li>
       <li class="child"><a href="<?php echo esc_url( home_url( '/' ) ); ?>sll/">スマートエルライン™ライト</a></li>
-      <li class="child"><a href="<?php echo esc_url( home_url( '/' ) ); ?>plc_tape/">エルクライト™JB.JC.JD</a></li>
+      <li class="child"><a href="<?php echo esc_url( home_url( '/' ) ); ?>plc_tape/">エルクライト™ シリーズ</a></li>
       <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>agency/">販売代理店様へ</a></li>
       <li><a href="#" class="disabled">お役立ち情報</a></li>
       <li class="child"><a href="<?php echo esc_url( home_url( '/' ) ); ?>whitepaper/">お役立ち資料</a></li>

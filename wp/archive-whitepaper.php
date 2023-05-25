@@ -6,7 +6,7 @@
     <div class="containers">
       <div class="hero03__box">
         <h1 class="ttl-primary-lower">お役立ち資料</h1>
-        <div class="lead">業界や製品に関する基礎知識、ノウハウをまとめた資料をご用意しております。<br>無料でダウンロードいただけますのでぜひご覧ください。</div>
+        <div class="lead">業界や製品に関する基礎知識、ノウハウを<br class="sp-only">まとめた資料をご用意しております。<br>無料でダウンロードいただけますので<br class="sp-only">ぜひご覧ください。</div>
       </div>
     </div>
   </section>

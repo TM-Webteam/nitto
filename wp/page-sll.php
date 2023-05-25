@@ -11,11 +11,11 @@ get_header(); ?>
     <section class="hero02">
       <div class="containers">
         <div class="hero02__box">
-          <div class="hero02__box--had">ハウスメーカー様、工務店様、太陽光発電・蓄電池の設置運用会社様へ</div>
+          <div class="hero02__box--had">ハウスメーカー様、工務店様、<br class="sp-only">太陽光発電・蓄電池の設置運用会社様へ</div>
           <div class="hero02__box--sub">簡単操作✕予算を抑えた停電対策</div>
           <h1 class="ttl-primary-lower">スマートエルライン™ライト</h1>
           <div class="ctabtn">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>catalog/" class="more bgLB wp-thumb">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>catalog/sll/" class="more bgLB wp-thumb">
               <div class="balloon"><span class="balloon__txt">災害時のライフラインを確保する<span class="cR">給電システム</span></span></div>
               カタログダウンロード
             </a>
@@ -48,8 +48,7 @@ get_header(); ?>
     <section class="card-type4" id="to-page-link01">
       <div class="containers">
         <div class="card">
-          <h2 class="card__ttl">「<span>災害に強い家</span>という切り口で家を販売したい」<br class="sp-only"> <span
-              class="fw-n cW">企業様へ</span></h2>
+          <h2 class="card__ttl">「<span>災害に強い家</span>という切り口で家を<br class="sp-only">販売したい」 <span class="fw-n cW">企業様へ</span></h2>
           <div class="flex gap30 sp-reverse card__box">
             <dl class="card__box--txt">
               <dt>
@@ -162,11 +161,11 @@ get_header(); ?>
     <section class="material bg-B">
       <div class="containers">
         <div class="flex aiC jcC gap50 desc">
-          <figure class="desc__img"><img src="<?php echo assets_path() ?>img/common/img-wp.png" alt=""></figure>
+          <figure class="desc__img"><img src="<?php echo assets_path() ?>img/sll/img-wp.png" alt=""></figure>
           <summary class="desc__box">
             <div class="desc__box--sub">詳細が5分で分かる！</div>
             <div class="desc__box--ttl">スマートエルライン™ライト</div>
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>catalog/" class="more bgW">カタログをダウンロード</a>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>catalog/sll/" class="more bgW">カタログをダウンロード</a>
           </summary>
         </div>
       </div>

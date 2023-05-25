@@ -18,6 +18,7 @@
         <p>● 回答までにお時間をいただく場合や、回答ができない場合もございますので、ご了承ください。</p>
       </div>
 
+      <div class="form__ttl">お問合せ・ご相談フォーム</div>
       <div id="satori__creative_container">
         <script id="-_-satori_creative-_-" src="//delivery.satr.jp/js/creative_set.js" data-key="159f4a1420dee4c3"></script>
       </div>

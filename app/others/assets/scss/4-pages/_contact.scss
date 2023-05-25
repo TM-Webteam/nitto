@@ -29,19 +29,28 @@
     }
   }
 
+  .form__ttl {
+    font-size: 24px;
+    padding: 30px 15px;
+    @media #{$sp} {
+      font-size: 16px;
+      padding: 20px 10px;
+    }
+  }
+
 }
 
-// .satori__form_body_159f4a1420dee4c3 {
-//   padding: 45px 70px;
-//   background: #F7F7F7;
-//   @media #{$sp} {
-//     padding: 15px;
-//   }
-// }
+#satori__form_body {
+  padding: 0 45px 70px !important;
+  background: #F7F7F7 !important;
+  @media #{$sp} {
+    padding: 15px !important;
+  }
+}
 
-// .satori__custom_form_159f4a1420dee4c3_css {
-//   background-color: #F7F7F7 !important;
-// }
+.satori__custom_form {
+  background-color: #F7F7F7 !important;
+}
 
 // .satori__input_group {
 //   display: flex;
@@ -66,42 +75,42 @@
 //   }
 // }
 
-// .satori__custom_form_159f4a1420dee4c3_css .satori__require {
-//   background: #D22630 !important;
-//   color: #fff !important;
-//   font-size: 12px !important;
-//   font-weight: bold !important;
-//   padding: 5px !important;
-//   line-height: 1 !important;
-// }
+.satori__require {
+  background: #D22630 !important;
+  color: #fff !important;
+  font-size: 12px !important;
+  font-weight: bold !important;
+  padding: 5px !important;
+  line-height: 1 !important;
+}
 
-// .satori__custom_form_159f4a1420dee4c3_css .satori__not_require {
-//   background: #777 !important;
-//   color: #fff !important;
-//   font-size: 12px !important;
-//   font-weight: bold !important;
-//   padding: 5px !important;
-//   line-height: 1 !important;
-// }
+.satori__not_require {
+  background: #777 !important;
+  color: #fff !important;
+  font-size: 12px !important;
+  font-weight: bold !important;
+  padding: 5px !important;
+  line-height: 1 !important;
+}
 
-// .satori__custom_form_159f4a1420dee4c3_css .satori__input_group input[type=email],
-// .satori__custom_form_159f4a1420dee4c3_css .satori__input_group input[type=text],
-// .satori__custom_form_159f4a1420dee4c3_css .satori__input_group input[type=tel],
-// .satori__custom_form_159f4a1420dee4c3_css .satori__input_group input[type=checkbox],
-// .satori__custom_form_159f4a1420dee4c3_css .satori__input_group input[type=url],
-// .satori__custom_form_159f4a1420dee4c3_css .satori__input_group textarea {
-//   background: #fff !important;
-//   border: 1px solid #aaa !important;
-//   padding: 2px 5px !important;
-//   height: 50px !important;
-//   @media #{$sp} {
-//     height: 40px !important;
-//   }
-// }
+.satori__input_group input[type=email],
+.satori__input_group input[type=text],
+.satori__input_group input[type=tel],
+.satori__input_group input[type=checkbox],
+.satori__input_group input[type=url],
+.satori__input_group textarea {
+  background: #fff !important;
+  border: 1px solid #aaa !important;
+  padding: 2px 5px !important;
+  height: 50px !important;
+  @media #{$sp} {
+    height: 40px !important;
+  }
+}
 
-// .satori__custom_form_159f4a1420dee4c3_css .satori__input_group input[type=checkbox] {
-//   height: auto !important;
-// }
+.satori__input_group input[type=checkbox] {
+  height: auto !important;
+}
 
 // .satori__input_group:nth-child(7),
 // .satori__input_group:nth-child(8),
@@ -125,25 +134,46 @@
 //   width: auto;
 // }
 
-// .satori__custom_form_159f4a1420dee4c3_css .satori__btn {
-//   display: block;
-//   width: 40% !important;
-//   background: #171C8F !important;
-//   border: 1px solid #171C8F !important;
-//   color: #fff !important;
-//   padding: 15px !important;
-//   border-radius: 40px !important;
-//   font-size: 20px !important;
-//   font-weight: bold !important;
-//   @media #{$sp} {
-//     font-size: 16px !important;
-//     width: 85% !important;
-//     padding: 10px !important;
-//   }
-// }
+.satori__btn {
+  display: block;
+  width: 40% !important;
+  background: #171C8F !important;
+  border: 1px solid #171C8F !important;
+  color: #fff !important;
+  padding: 15px !important;
+  border-radius: 40px !important;
+  font-size: 20px !important;
+  font-weight: bold !important;
+  @media #{$sp} {
+    font-size: 16px !important;
+    width: 85% !important;
+    padding: 10px !important;
+  }
+}
 
-// .satori__custom_form_159f4a1420dee4c3_css a, 
-// .satori__custom_form_159f4a1420dee4c3_css a:visited {
-//   color: #171C8F !important;
-//   text-decoration: underline !important;
-// }
+.satori__message a, 
+.satori__message a:visited {
+  color: #171C8F !important;
+  text-decoration: underline !important;
+}
+
+.side-form #satori__form_body {
+  padding: 0 15px 30px !important;
+  background: #F7F7F7 !important;
+  @media #{$sp} {
+    padding: 0 15px 15px !important;
+  }
+}
+
+.side-form .satori__btn {
+  width: 100% !important;
+  font-size: 18px !important;
+  @media #{$sp} {
+    font-size: 16px !important;
+    width: 85% !important;
+  }
+}
+
+#satori__creative_container * {
+  color: #000;
+}

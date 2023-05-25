@@ -6,7 +6,7 @@
     <div class="containers">
       <div class="hero03__box">
         <h1 class="ttl-primary-lower">お役立ちコラム</h1>
-        <div class="lead">防災対策のお困りごとに関するノウハウ・トレンド情報をお届けするコラムです。</div>
+        <div class="lead">防災対策のお困りごとに関するノウハウ・<br class="sp-only">トレンド情報をお届けするコラムです。</div>
       </div>
     </div>
   </section>

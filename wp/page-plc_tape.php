@@ -11,13 +11,13 @@ get_header(); ?>
     <section class="hero03">
         <div class="containers core">
           <div class="hero03__box">
-            <h2 class="hero03__box--lead">工場、倉庫、商業施設、公共施設の安全・衛生管理ご担当者様へ</h2>
+            <h2 class="hero03__box--lead">工場、倉庫、商業施設、公共施設の安全・<br class="sp-only">衛生管理ご担当者様へ</h2>
             <h2 class="hero03__box--sub txt-shadow--cG">停電や火災発生時の避難経路の確保や暗所での事故防止に効果的！</h2>
             <h1 class="ttl-primary txt-shadow--cG">高輝度蓄光テープ <br class="sp-only">エルクライト™ シリーズ</h1>
             <div class="ctabtn">
-                <h3 class="balloon bgLG"><span class="balloon__txt balloon__txt--cG">安全確保のための<span class="cR">高輝度蓄光テープ</span></span></h3>
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>catalog/" class="more bgLG wp-thumb">カタログダウンロード</a>
-              </div>
+              <h3 class="balloon bgLG"><span class="balloon__txt balloon__txt--cG">安全確保のための<span class="cR">高輝度蓄光テープ</span></span></h3>
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>catalog/plc_tape/" class="more bgLG wp-thumb">カタログダウンロード</a>
+            </div>
           </div>
         </div>
       </section>
@@ -48,7 +48,7 @@ get_header(); ?>
                 <h2 class="card__ttl">「<span>突然の停電に備え、</span>電気に頼らない<br class="sp-only">防災対策をしたい」 <span class="fw-n cW">企業様へ</span></h2>
                 <div class="flex aiC gap30 sp-reverse card__box">
                     <dl class="card__box--txt">
-                        <dt><h3>停電時、電気無しで機能する避難誘導として、<br>足元や避難経路を示すことが可能</h3></dt>
+                        <dt><h3>停電時、電気無しで機能する避難誘導として、<br class="pc-only">足元や避難経路を示すことが可能</h3></dt>
                         <dd>災害時、突然の停電が起こった際、電気式避難誘導灯や非常電源、自家発電があっても、機能しない場合があります。電気に頼らない高輝度蓄光テープなら、過酷な状況下でも高い機能を発揮します。</dd>
                     </dl>
                     <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/plc_tape/img-plc_tape03.png" alt=""></figure>
@@ -88,7 +88,7 @@ get_header(); ?>
   <!-- カード型 type5 -->
   <section class="card-type1 plc_tape__feature">
     <div class="containers">
-      <h2 class="ttl-secondary">高輝度蓄光テープ エルクライト™の特長</h2>
+      <h2 class="ttl-secondary">高輝度蓄光テープ エルクライト™の<br class="sp-only">特長</h2>
       <ul class="flex gap30 card">
         <li class="card__box box-shadow">
           <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/plc_tape/img-plc_tape-feature-heading01.png" alt=""></figure>
@@ -113,11 +113,11 @@ get_header(); ?>
     <section class="material bg-B">
         <div class="containers">
             <div class="flex aiC jcC gap50 desc">
-            <figure class="desc__img"><img src="<?php echo assets_path() ?>img/common/img-wp.png" alt=""></figure>
+            <figure class="desc__img"><img src="<?php echo assets_path() ?>img/plc_tape/img-wp.png" alt=""></figure>
             <summary class="desc__box">
                 <div class="desc__box--sub">標準サイズや残光輝度、りん光時間が分かる！</div>
-                <div class="desc__box--ttl">高輝度蓄光テープ <br class="sp-only">エルクライト™</div>
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>catalog/" class="more bgW">カタログをダウンロード</a>
+                <div class="desc__box--ttl">高輝度蓄光テープ エルクライト™</div>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>catalog/plc_tape/" class="more bgW">カタログをダウンロード</a>
             </summary>
             </div>
         </div>

@@ -12,7 +12,7 @@
         <div class="item__box right">
           <figure class="item__box--img"><img src="<?php echo assets_path() ?>img/common/icon-dl.svg" alt="製品カタログ"></figure>
           <h2 class="item__box--ttl">製品カタログ</h2>
-          <div class="item__box--txt">防災対策に関わる日東エルマテリアルのサービスカタログです。<br>ご興味をお持ちの方はぜひダウンロードくださいませ。</div>
+          <div class="item__box--txt">防災対策に関わる日東エルマテリアルの<br class="sp-only">サービスカタログです。<br>ご興味をお持ちの方はぜひ<br class="sp-only">ダウンロードくださいませ。</div>
         </div>
       </a>
     </div>

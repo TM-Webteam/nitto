@@ -5,7 +5,7 @@
         <div class="nav__box--ttl">製品紹介</div>
         <ul class="nav__box--list">
           <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>sll/">スマートエルライン™ライト</a></li>
-          <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>plc_tape/">エルクライト™JB.JC.JD</a></li>
+          <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>plc_tape/">エルクライト™ シリーズ</a></li>
           <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>agency/">販売代理店様へ</a></li>
         </ul>
       </div>
