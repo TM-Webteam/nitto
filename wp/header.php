@@ -13,29 +13,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="keywords" content="">
-<!-- <meta name="description" content="<?php bloginfo('description'); ?>"> -->
 <meta name="author" content="">
 <title><?php wp_title('|', true, 'right'); ?></title>
 <meta name="format-detection" content="telephone=no">
-
-<!-- Schema.org markup for Google+ -->
-<!-- <meta itemprop="name" content="<?php esc_html(bloginfo('name')) ?>">
-<meta itemprop="image" content="<?php esc_html(bloginfo('description')) ?>"> -->
-
-<!-- Twitter Card data -->
-<!-- <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="日東エルマテリアル">
-<meta name="twitter:image:src" content=""> -->
-
-<!-- Open Graph data -->
-<!-- <meta property="og:title" content="<?php esc_html(bloginfo('name')) ?>">
-<meta property="og:description" content="<?php esc_html(bloginfo('description')) ?>">
-<meta property="og:type" content="website">
-<meta property="og:url" content="">
-<meta property="og:image" content="">
-<meta property="og:image:width" content="">
-<meta property="og:image:height" content="">
-<meta property="og:site_name" content="<?php esc_html(bloginfo('name')) ?>"> -->
 
 <!-- Style sheet -->
 <link rel="stylesheet" href="<?php echo assets_path() ?>css/main.css">

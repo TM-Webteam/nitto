@@ -17,7 +17,7 @@
       <?php
         $paged = get_query_var('paged') ? get_query_var('paged') : 1;
         $args = array(
-          'posts_per_page' => -1,
+          'posts_per_page' => 6,
           'post_type' => 'catalog',
           'paged' => $paged,
           'order' => 'DESC',
@@ -39,6 +39,17 @@
 
         <?php endwhile; ?>
       <?php endif; ?>
+
+
+      <?php
+      $GLOBALS['wp_query']->max_num_pages = $the_query->max_num_pages;
+      the_posts_pagination(array(
+        'mid_size' => 1,
+        'prev_text' => '<span></span>',
+        'next_text' => '<span></span>'
+      ));
+      wp_reset_postdata();
+      ?>
       
     </div>
   </section>
