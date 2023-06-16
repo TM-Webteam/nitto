@@ -149,6 +149,11 @@
     width: 85% !important;
     padding: 10px !important;
   }
+  &.cancel {
+    background: #b6b6b6 !important;
+    border: 1px solid #b6b6b6 !important;
+    margin-bottom: 15px!important;
+  }
 }
 
 .satori__message a, 
@@ -176,4 +181,18 @@
 
 #satori__creative_container * {
   color: #000;
+}
+
+#satori__creative_container .satori__error_messages,
+#satori__creative_container .satori__error_messages span {
+  line-height: 1.4;
+  color: red !important;
+  font-size: 14px;
+  font-weight: bold;
+  @media #{$sp} {
+    font-size: 12px;
+  }
+  // &::before {
+  //   content: "※";
+  // }
 }
